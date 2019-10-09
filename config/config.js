@@ -228,19 +228,57 @@ export default {
               name: 'result',
               icon: 'check-circle-o',
               path: '/result',
-              routes: [],
+              routes: [
+                {
+                  name: 'success',
+                  path: '/result/success',
+                  component: './result/success',
+                },
+                {
+                  name: 'fail',
+                  path: '/result/fail',
+                  component: './result/fail',
+                },
+              ],
             },
             {
               name: 'exception',
               icon: 'warning',
               path: '/exception',
-              routes: [],
+              routes: [
+                {
+                  name: '403',
+                  path: '/exception/403',
+                  component: './exception/403',
+                },
+                {
+                  name: '404',
+                  path: '/exception/404',
+                  component: './exception/404',
+                },
+                {
+                  name: '500',
+                  path: '/exception/500',
+                  component: './exception/500',
+                },
+              ],
             },
             {
               name: 'account',
               icon: 'user',
               path: '/account',
-              routes: [],
+              routes: [
+                {
+                  name: 'center',
+                  path: '/account/center',
+                  component: './account/center',
+                },
+                {
+                  name: 'settings',
+                  path: '/account/settings',
+                  component: './account/settings',
+                },
+              ],
             },
             {
               name: 'editor',
